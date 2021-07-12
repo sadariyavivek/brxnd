@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>372498102395-b41bnhigo26dfjg5quqb34nfrh44ripn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.372498102395-b41bnhigo26dfjg5quqb34nfrh44ripn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCiBfxLU9_fNtaGZCEUlg7qyZZ_RntJeLo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>372498102395</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.blue-red.brXnd</string>
+	<key>PROJECT_ID</key>
+	<string>brxnd-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>brxnd-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:372498102395:ios:bb3d7a883dba917d18cade</string>
+	<key>DATABASE_URL</key>
+	<string>https://brxnd-app.firebaseio.com</string>
+</dict>
+</plist>

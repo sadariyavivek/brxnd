@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iRa-72-zKC">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Navigation Controller-->
+        <scene sceneID="l3R-Uv-j7R">
+            <objects>
+                <navigationController storyboardIdentifier="UINavigationController" id="iRa-72-zKC" customClass="CustomNavigationController" customModule="brXnd_Dev" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oRZ-ZV-Ga3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ynH-lR-Gni" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99" y="370"/>
+        </scene>
+        <!--Studio-->
+        <scene sceneID="i06-v1-NAg">
+            <objects>
+                <viewController id="bAQ-4o-1pE" customClass="CustomNavigationController" customModule="brXnd_Dev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="op6-KD-UKp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GDB-Z1-mXZ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Studio" image="studioIcon" id="dQK-eW-ERL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uGU-3m-FHO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1958" y="902"/>
+        </scene>
+        <!--Scheduled-->
+        <scene sceneID="brG-rr-kme">
+            <objects>
+                <viewController id="anv-Fx-1VG" customClass="CustomNavigationController" customModule="brXnd_Dev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fKC-gl-uAE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9C0-jF-xZP"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Scheduled" image="brScheduleIcon" id="dm3-4x-Qvf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tPW-tA-abM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2996" y="-75"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="VkS-YK-uC0">
+            <objects>
+                <viewController id="2rm-rn-gLf" customClass="CustomNavigationController" customModule="brXnd_Dev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yor-6B-HXw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HGd-uj-0VI"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" id="Dlh-i5-JK7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sxT-fX-etz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2994" y="901"/>
+        </scene>
+        <!--Posts-->
+        <scene sceneID="m6y-eG-uUv">
+            <objects>
+                <viewController id="Q65-Oy-EE8" customClass="CustomNavigationController" customModule="brXnd_Dev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QOM-aw-LIj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4M4-Uq-FPV"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Posts" image="brContentIcon" id="nTX-03-29X"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b2F-P3-OJn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1958" y="-74"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mKW-Ou-Cbb">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="sYz-ic-aVJ" customClass="TabBarController" customModule="brXnd_Dev" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FTL-7o-fzP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bAQ-4o-1pE" kind="relationship" relationship="viewControllers" id="D1B-Yu-Fzn"/>
+                        <segue destination="Q65-Oy-EE8" kind="relationship" relationship="viewControllers" id="mUa-i0-p22"/>
+                        <segue destination="anv-Fx-1VG" kind="relationship" relationship="viewControllers" id="oIt-L6-MJi"/>
+                        <segue destination="2rm-rn-gLf" kind="relationship" relationship="viewControllers" id="lfK-Y1-xMI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rpU-8A-har" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061" y="370"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="brContentIcon" width="23" height="23"/>
+        <image name="brScheduleIcon" width="24" height="24"/>
+        <image name="settings" width="24.5" height="24.5"/>
+        <image name="studioIcon" width="18.5" height="18.5"/>
+    </resources>
+</document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PagesFormTableViewCell" id="KGk-i7-Jjw" customClass="PagesFormTableViewCell" customModule="brXnd_Dev" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOp-vS-N5B">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y6M-QU-3mU">
+                                <rect key="frame" x="16" y="-3" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="5dJ-ok-hYK"/>
+                                    <constraint firstAttribute="height" constant="50" id="g7I-ak-4Z7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNT-hA-8re">
+                                <rect key="frame" x="82" y="16" width="33.5" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebookIcon" translatesAutoresizingMaskIntoConstraints="NO" id="JIN-cp-ZgE">
+                                <rect key="frame" x="277" y="8.5" width="27" height="27"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="y6M-QU-3mU" firstAttribute="leading" secondItem="bOp-vS-N5B" secondAttribute="leading" constant="16" id="5gQ-Xt-ea7"/>
+                            <constraint firstItem="fNT-hA-8re" firstAttribute="top" secondItem="bOp-vS-N5B" secondAttribute="top" constant="16" id="8ie-UV-Kej"/>
+                            <constraint firstItem="JIN-cp-ZgE" firstAttribute="centerY" secondItem="bOp-vS-N5B" secondAttribute="centerY" id="CvB-ta-s6v"/>
+                            <constraint firstAttribute="trailing" secondItem="JIN-cp-ZgE" secondAttribute="trailing" constant="16" id="Otm-ox-XFl"/>
+                            <constraint firstItem="fNT-hA-8re" firstAttribute="leading" secondItem="y6M-QU-3mU" secondAttribute="trailing" constant="16" id="Yco-gF-2Xo"/>
+                            <constraint firstItem="y6M-QU-3mU" firstAttribute="centerY" secondItem="bOp-vS-N5B" secondAttribute="centerY" id="dZo-rL-GtS"/>
+                            <constraint firstAttribute="bottom" secondItem="fNT-hA-8re" secondAttribute="bottom" constant="16" id="jm6-X3-Ht7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bOp-vS-N5B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Jxf-Ew-ouq"/>
+                    <constraint firstItem="bOp-vS-N5B" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nyb-9y-d9c"/>
+                    <constraint firstAttribute="bottom" secondItem="bOp-vS-N5B" secondAttribute="bottom" id="ueK-NN-qsY"/>
+                    <constraint firstAttribute="trailing" secondItem="bOp-vS-N5B" secondAttribute="trailing" id="vsB-F4-VQp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellView" destination="bOp-vS-N5B" id="7Jc-O4-a78"/>
+                <outlet property="icon" destination="JIN-cp-ZgE" id="k9y-kl-gmM"/>
+                <outlet property="pageImage" destination="y6M-QU-3mU" id="0KB-zB-pt7"/>
+                <outlet property="title" destination="fNT-hA-8re" id="M7T-CV-U6x"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="117"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="facebookIcon" width="27" height="27"/>
+    </resources>
+</document>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Editor Preview View Controller-->
+        <scene sceneID="3NC-FU-EIZ">
+            <objects>
+                <viewController storyboardIdentifier="EditorPreviewViewController" id="jPS-Y7-JNT" customClass="EditorPreviewViewController" customModule="brXnd_Dev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="op2-Ow-aqO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e4j-Gc-JKu">
+                                <rect key="frame" x="0.0" y="20" width="375" height="482"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxl-LD-Qga">
+                                <rect key="frame" x="0.0" y="602" width="375" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="k7p-oR-M4i"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem image="editIconTap" id="QpJ-eC-4pb"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="7hq-Ns-qmR"/>
+                                    <barButtonItem image="createPost" id="Z2A-RK-2So"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="vcX-xL-gAE"/>
+                                    <barButtonItem image="export" id="8Q2-OK-o2r"/>
+                                </items>
+                            </toolbar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playVideoIcon" translatesAutoresizingMaskIntoConstraints="NO" id="FFN-jP-kJi">
+                                <rect key="frame" x="162.5" y="236" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7k1-65-BRe"/>
+                                    <constraint firstAttribute="width" constant="50" id="QxC-qY-wJp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tCX-93-fGo" firstAttribute="trailing" secondItem="dxl-LD-Qga" secondAttribute="trailing" id="Ccc-aP-dY2"/>
+                            <constraint firstItem="dxl-LD-Qga" firstAttribute="leading" secondItem="tCX-93-fGo" secondAttribute="leading" id="TDL-gk-rhb"/>
+                            <constraint firstItem="FFN-jP-kJi" firstAttribute="centerX" secondItem="e4j-Gc-JKu" secondAttribute="centerX" id="VSN-I9-Lx1"/>
+                            <constraint firstItem="FFN-jP-kJi" firstAttribute="centerY" secondItem="e4j-Gc-JKu" secondAttribute="centerY" id="Vcz-sy-4mW"/>
+                            <constraint firstItem="e4j-Gc-JKu" firstAttribute="top" secondItem="tCX-93-fGo" secondAttribute="top" id="hSd-81-5ju"/>
+                            <constraint firstItem="e4j-Gc-JKu" firstAttribute="leading" secondItem="tCX-93-fGo" secondAttribute="leading" id="lZ5-ab-j3h"/>
+                            <constraint firstItem="tCX-93-fGo" firstAttribute="trailing" secondItem="e4j-Gc-JKu" secondAttribute="trailing" id="sQu-dS-vXR"/>
+                            <constraint firstItem="dxl-LD-Qga" firstAttribute="top" secondItem="e4j-Gc-JKu" secondAttribute="bottom" constant="100" id="wfa-Ne-O2z"/>
+                            <constraint firstItem="tCX-93-fGo" firstAttribute="bottom" secondItem="dxl-LD-Qga" secondAttribute="bottom" id="xbo-sY-trn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tCX-93-fGo"/>
+                    </view>
+                    <connections>
+                        <outlet property="createPostButton" destination="Z2A-RK-2So" id="jfJ-Mi-Plm"/>
+                        <outlet property="editButton" destination="QpJ-eC-4pb" id="3fx-21-GGE"/>
+                        <outlet property="exportButton" destination="8Q2-OK-o2r" id="87w-7c-gTo"/>
+                        <outlet property="libraryItemPreview" destination="e4j-Gc-JKu" id="LX5-yI-TbX"/>
+                        <outlet property="playVideoIcon" destination="FFN-jP-kJi" id="8SX-4F-dVs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v91-0L-KnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-70" y="119"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="createPost" width="41.5" height="41.5"/>
+        <image name="editIconTap" width="22.5" height="22.5"/>
+        <image name="export" width="22" height="22"/>
+        <image name="playVideoIcon" width="50.5" height="50.5"/>
+    </resources>
+</document>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScheduledTableViewHeaderFooterView" customModule="brXnd_Dev" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ScheduledTableViewHeaderFooterView" customModule="brXnd_Dev" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="liP-FI-5XO">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Ou-OI-U42">
+                            <rect key="frame" x="16" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Qrk-ll-RyA"/>
+                                <constraint firstAttribute="height" constant="50" id="X6x-4o-gSH"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrc-SV-fGq">
+                            <rect key="frame" x="82" y="16" width="33.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebookIcon" translatesAutoresizingMaskIntoConstraints="NO" id="CuM-Ua-K0S">
+                            <rect key="frame" x="277" y="11.5" width="27" height="27"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="nrc-SV-fGq" secondAttribute="bottom" constant="16" id="3GY-4g-zKT"/>
+                        <constraint firstItem="CuM-Ua-K0S" firstAttribute="centerY" secondItem="liP-FI-5XO" secondAttribute="centerY" id="6YI-Sc-IyN"/>
+                        <constraint firstItem="nrc-SV-fGq" firstAttribute="top" secondItem="liP-FI-5XO" secondAttribute="top" constant="16" id="EbX-00-UfK"/>
+                        <constraint firstItem="0Ou-OI-U42" firstAttribute="leading" secondItem="liP-FI-5XO" secondAttribute="leading" constant="16" id="Her-n1-6Dn"/>
+                        <constraint firstAttribute="trailing" secondItem="CuM-Ua-K0S" secondAttribute="trailing" constant="16" id="Rth-8N-5jT"/>
+                        <constraint firstItem="nrc-SV-fGq" firstAttribute="leading" secondItem="0Ou-OI-U42" secondAttribute="trailing" constant="16" id="aLO-zr-8W6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="0Ou-OI-U42" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="1O8-Pb-I6D"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="liP-FI-5XO" secondAttribute="bottom" id="CXP-PI-aOp"/>
+                <constraint firstItem="liP-FI-5XO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Lqn-80-Fh7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="liP-FI-5XO" secondAttribute="trailing" id="lTb-YO-E6a"/>
+                <constraint firstItem="liP-FI-5XO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="s1D-uX-zjj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="pageImageView" destination="0Ou-OI-U42" id="Sgo-SD-4PH"/>
+                <outlet property="pageTitle" destination="nrc-SV-fGq" id="ukq-wk-Z2f"/>
+                <outlet property="socialMediaIcon" destination="CuM-Ua-K0S" id="iOT-wP-Csi"/>
+            </connections>
+            <point key="canvasLocation" x="300" y="-86.619718309859152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="facebookIcon" width="27" height="27"/>
+    </resources>
+</document>
